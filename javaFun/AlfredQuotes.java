@@ -54,10 +54,17 @@ public class AlfredQuotes {
     */
     public String respondBeforeAlexis(String conversation) {
         if (conversation.contains("Alexis")){
-            String response = String.format("Right away, sir. She certainly isn't sophisticated enough for that");
+            String response = String.format("Right away, sir. She certainly isn't sophisticated enough for that.");
             return response;
         }
-        return "place holder for snarky response return string";
+        else if (conversation.contains("Alfred")){
+            String response = String.format("At your service. As you wish, naturally.");
+            return response;
+        }
+        else {
+            String response = String.format("Right. And with that I shall retire.");
+            return response;
+        }
     }
     // NINJA BONUS
     // Write your own AlfredQuote method using any of the String methods you have learned!
