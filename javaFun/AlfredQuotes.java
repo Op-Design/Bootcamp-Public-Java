@@ -1,6 +1,6 @@
 import java.util.Date;
 public class AlfredQuotes {
-     /*
+    /*
     * Inputs: None
     * Return Type: String
     * Description: Returns a generic greeting that Alfred will say to anyone.
