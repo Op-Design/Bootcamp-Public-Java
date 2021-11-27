@@ -1,12 +1,15 @@
 public class BasicJava {
     
-    public String printStart1Through255{
+    public void printStart1Through255() {
         int [] myArray = new int [255];
-        for (int iterator = 0; iterator < 256; iterator++){
-            myArray[iterator] = iterator;
-            System.out.println(myArray[iterator]);
-            iterator++;
+        for (int i = 0; i < 255; i++){
+            myArray[i] = i+1;
+            System.out.print(myArray[i]);
         }
+        // for (int i = 0; i < 7; i++){
+        //     System.out.println("bar");
+        //     System.out.println(i);
+        // }
     }
     /* 
     Print 1-255
