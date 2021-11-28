@@ -36,8 +36,7 @@ public class BasicJava {
         return result;
     }
 
-    public void iterateThroughArray(int [] array){
-        // System.out.println(array.length);
+    public void printIterateThroughArray(int [] array){
         int iterator = 0;
         while(iterator < array.length){
             System.out.println(array[iterator]);
@@ -45,5 +44,13 @@ public class BasicJava {
         }
     }
 
-
+    public void printArrayMaxValue(int [] array){
+        int maxValue = array[0];
+        for (int iterator=1; iterator<array.length; iterator++){
+            if (array[iterator]>maxValue){
+                maxValue = array[iterator];
+            }
+        }
+        System.out.println(maxValue);
+    }
 }
