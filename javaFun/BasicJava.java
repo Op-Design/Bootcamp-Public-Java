@@ -1,4 +1,5 @@
 // import java.util.Iterator;
+import java.util.ArrayList;
 
 public class BasicJava {
     
@@ -52,5 +53,17 @@ public class BasicJava {
             }
         }
         System.out.println(maxValue);
+    }
+    
+    public ArrayList<Integer> ArraywithOddNumbers(){
+        ArrayList<Integer> newArray = new ArrayList<Integer>();
+        for (int iterator=0; iterator<256; iterator++){
+            if (iterator%2 != 0){
+                newArray.add(iterator);
+                // System.out.print(newArray.get(iterator));
+            }
+        }
+
+        return newArray;
     }
 }
