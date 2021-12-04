@@ -55,7 +55,7 @@ public class BasicJava {
         System.out.println(maxValue);
     }
     
-    public ArrayList<Integer> ArraywithOddNumbers(){
+    public ArrayList<Integer> returnArrayWithOddNumbers(){
         ArrayList<Integer> newArray = new ArrayList<Integer>();
         for (int iterator=0; iterator<256; iterator++){
             if (iterator%2 != 0){
@@ -65,5 +65,18 @@ public class BasicJava {
         }
 
         return newArray;
+    }
+
+    public float getAverage(int [] array){
+        int numberOfItems = array.length;
+        float average = 0;
+        float sum = 0;
+        for (int iterator = 0; iterator<array.length; iterator ++){
+            sum += array[iterator];
+        }
+        System.out.println(sum);
+        average = sum/numberOfItems;
+        System.out.println(average);
+        return average;
     }
 }
