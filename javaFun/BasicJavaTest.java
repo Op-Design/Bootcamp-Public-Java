@@ -24,11 +24,11 @@ public class BasicJavaTest {
         // ArrayList <Integer> result = myArray.returnArrayWithOddNumbers();
         // System.out.println(result);
 
-        // int [] arrayForGetAverage0 = {1,3,5,7,9,13};
-        // int [] arrayForGetAverage1 = {-1,-3,-5,-7,-9,-13};
-        // int [] arrayForGetAverage2 = {0,3,-5,7,-9,1};
-        // myArray.getAverage(arrayForGetAverage0);
-        // myArray.getAverage(arrayForGetAverage1);
-        // myArray.getAverage(arrayForGetAverage2);
+        int [] arrayForGetAverage0 = {1,3,5,7,9,13};
+        int [] arrayForGetAverage1 = {-1,-3,-5,-7,-9,-13};
+        int [] arrayForGetAverage2 = {0,3,-5,7,-9,1};
+        myArray.getAverage(arrayForGetAverage0);
+        myArray.getAverage(arrayForGetAverage1);
+        myArray.getAverage(arrayForGetAverage2);
     }
 }

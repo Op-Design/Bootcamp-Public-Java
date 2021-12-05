@@ -67,6 +67,9 @@ public class BasicJava {
         return newArray;
     }
 
+
+    // Ninja Bonus 
+
     public float getAverage(int [] array){
         int numberOfItems = array.length;
         float average = 0;
