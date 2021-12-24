@@ -42,16 +42,22 @@ public class PuzzleJava {
             generatedPassword[i] = letter;
             System.out.print(generatedPassword[i]);
         }
+        System.out.println();
         return generatedPassword;
     }
 
     // Sensei Bonus
 
-    public ArrayList<Object> shuffleArray (ArrayList<Object> array){
-        ArrayList<Object> arrayToShuffle = new ArrayList<Object>();
-        
+    public int[] shuffleArray(int[] array){
+        int [] shuffledArray = new int[array.length];
+        for (int i=0; i<array.length; i++){
+            Random randMachine = new Random();
+            int randomIndexToReplace = randMachine.nextInt(array.length);
+            shuffledArray[i] = array[randomIndexToReplace];
+            System.out.printf("%s %s\n", shuffledArray[i], array[i]);
+        }
 
-
+        return shuffledArray;
     }
 
 

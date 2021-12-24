@@ -5,6 +5,8 @@ public class PuzzleTest{
         // testPuzzle.getRandomLetter();
         testPuzzle.generatePassword();
         testPuzzle.generatePassword(15);
+        int [] sampleArray = {10, 5, 8, 6, 7};
+        testPuzzle.shuffleArray(sampleArray);
 
 
     }
